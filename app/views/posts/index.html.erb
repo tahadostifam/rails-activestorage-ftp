@@ -1,0 +1,5 @@
+<% @posts.each do |p| %>
+    <h1><%= p.header %></h1>
+    <img src="<%= p.image.url(:original) %>">
+    <br><br><br>
+<% end %>

@@ -1,0 +1,9 @@
+<h1>Create Post</h1>
+
+<%= form_with model: @post, url: {:action => :create}, html: {multipart: true}, method: :post do |f| %>
+    <%= f.text_field :header %><br><br>
+
+    <%= f.file_field :image %><br><br>
+
+    <%= f.submit 'Submit' %><br><br>
+<% end %>
